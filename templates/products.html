@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleproducts.css') }}">
+	<title>products</title>
+</head>
+<body>
+	<style>
+body {
+  background-image: url('https://i.pinimg.com/564x/45/8e/01/458e01b4e298d1b240f54ed7eb1ebf49.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+</style> 
+	<form action="/products" method="POST">
+	<center><h2 id="header1" style="background-color:whitesmoke;">Jolie</h2></center><a href="{{url_for('cart')}}"><img id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Ic_shopping_cart_48px.svg/1024px-Ic_shopping_cart_48px.svg.png" width="60" height="50"></a><br>
+	<h1>Our products!</h1>
+	<center>
+		<div class="cart">
+			<!--Pruduct 1 -->
+			<img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dwc64909f9/images/products/28000120_fr.jpg?sw=1660&sh=1660" style="width:20%">
+			<h2>Nova Ceramic</h2>
+			<p class="price">₪1,060.00</p>
+			<p>Description: <br> Dress in rare form. <br>The Nova Ceramic watch is designed with the smooth,highly resistant sheen of white ceramic.</p>
+			<p><input type="submit" name="Add to Cart" value="Nova Ceramic" class="button"></p><br><br>
+
+			<!--Pruduct 2 -->
+			<img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dw25b36a29/images/products/28000119_fr.jpg?sw=1660&sh=1660" style="width:20%">
+			<h3>Coronada Ceramic</h3>
+			<p class="price">₪845.00</p>
+			<p>Description: <br> Dress in rare form. <br>The Coronada Ceramic is designed with the smooth, highly resistant sheen of white ceramic.</p>
+			<p><input type="submit" name="Add to Cart" value="Coronada Ceramic" class="button"></p><br><br>
+
+			<!--Pruduct 3 -->
+			<img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dwf4b204b0/images/products/28000192_fr.jpg?sw=1660&sh=1660" style="width:20%">
+			<h3>Nova</h3>
+			<p class="price">₪675.00</p>
+			<p>Description: <br> The 38mm Nova channels an awe for the celestial with a future-forward design and dual timezone functionality.<br> The Tropic Haze colorway is on island time with a lush green dial, refreshing silver steel and sunlit gold accents.</p>
+			<p><input type="submit" name="Add to Cart" value="Nova" class="button"></p><br><br>
+
+			<!--Pruduct 4 -->
+			<img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dw8fc3ec1a/images/products/28000195_fr.jpg?sw=1660&sh=1660" style="width:20%">
+			<h3>Rise Mini</h3>
+			<p class="price">₪590.00</p>
+			<p>Description: <br> Vintage before it's vintage.<br> The Rise Mini channels 1950's nostalgia with a pretty and petite 30mm case and two-tone link bracelet.<br> The Tropic Haze colorway is on island time with a lush green dial, refreshing silver steel and sunlit gold accents.</p>
+			<p><input type="submit" name="Add to Cart" value="Rise Mini" class="button"></p><br><br>
+
+			<!--Pruduct 5 -->
+			<img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dw9b712af0/images/products/28000203_fr.jpg?sw=512&sh=640&q=85" style="width:20%">
+			<h3>Element Ceramic</h3>
+			<p class="price">₪975.00</p>
+			<p>Description: <br> Dress in rare form.<br> The Element Ceramic watch is designed with the smooth, highly resistant sheen of engineering ceramic, featuring an original midnight blue tone.</p>
+			<p><input type="submit" name="Add to Cart" value="Element Ceramic" class="button"></p><br><br>
+
+			<!--Pruduct 6 -->
+			<img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dw6c255753/images/products/28000204_fr.jpg?sw=1660&sh=1660" style="width:20%">
+			<h3>Chrono Ceramic</h3>
+			<p class="price">₪1,270.00</p>
+			<p>Description: <br> Dress in rare form. <br>The Chrono Ceramic watch is designed with the smooth, highly resistant sheen of engineering ceramic, featuring an original midnight blue tone.</p>
+			<p><input type="submit" name="Add to Cart" value="Chrono Ceramic" class="button"></p><br><br>
+
+			<!--Pruduct 7 -->
+			<img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dwae7eeac3/images/products/28000121_fr.jpg?sw=1660&sh=1660" style="width:20%">
+			<h3>Element Ceramic</h3>
+			<p class="price">₪975.00</p>
+			<p>Description: <br> Dress in rare form.<br> The Element Ceramic is designed with the smooth, highly resistant sheen of white ceramic.</p>
+			<p><input type="submit" name="Add to Cart" value="Elemant Ceramic" class="button"></p><br><br>
+
+			<!--Pruduct 8 -->
+			<img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dwd169d09c/images/products/28000122_fr.jpg?sw=1660&sh=1660" style="width:20%">
+			<h3>Chrono Ceramic</h3>
+			<p class="price">₪1,270.00</p>
+			<p>Description: <br> Dress in rare form.<br> The Chrono Ceramic is designed with the smooth, highly resistant sheen of white ceramic.</p>
+			<p><input type="submit" name="Add to Cart" value="Chrono ceramic" class="button"></p><br><br>
+
+		</div> </center>
+		</form>
+
+</body>
+</html>

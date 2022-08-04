@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleproducts.css') }}">
+	<title>signup</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/564x/45/8e/01/458e01b4e298d1b240f54ed7eb1ebf49.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <center><h1 id="header1" style="background-color:whitesmoke;">Jolie</h1></center>
+	<center><form method="POST" action="/signup">
+        <!-- Heading -->
+        <h4 style="font-size: 30px;">
+            Create an account!
+        </h4>
+
+        <!-- Subheading -->
+        <p style="font-size: 20px;">
+            Please fill up your information below to join us.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+
+        <!-- Full name -->
+        <div>
+            <label>Full name*</label>
+            <div>
+                <input type="name"  name="fullname" id="fullnameStr" required>
+            </div>
+        </div>
+
+        <!-- Cart number -->
+        <div>
+            <label>Card number*</label>
+            <div>
+                <input name="cardnum" id="cardnumStr" required>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div>
+            <label>Address*</label>
+            <div>
+                <input name="address" id="addressStr" required>
+            </div>
+        </div>
+
+        <!-- Button to submit -->
+        <br>
+        <div>
+            <input type="submit" class="button" />
+        </div>
+    </form></center>
+    <p>{{error}}</p>
+
+</body>
+</html>
